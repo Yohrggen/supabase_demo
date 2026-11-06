@@ -1,0 +1,20 @@
+$def with (datos)
+<h1>Buenas mi gente (Danirep) </h1>
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Telfono</th> 
+    </thead>
+    <tbody>
+        $for contacto in datos:
+        <tr>
+            <td>$contacto['id_contacto']</td>
+            <td>$contacto['nombre']</td>
+            <td>$contacto['email']</td>
+            <td>$contacto['telefono']</td>
+        </tr>
+    </tbody>
+</table>
